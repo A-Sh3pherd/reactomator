@@ -1,15 +1,11 @@
 {
   "name": "reactomator",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "A simple Component creation React-Cli",
   "main": "src/index.js",
-  "scripts": {
-    "start": "cd src && node index.js",
-    "run": "tsc --watch index.ts",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "scripts": {},
   "bin": {
-    "generate": "cd src && node index.js"
+    "banana": "node index.js"
   },
   "repository": {
     "type": "git",
@@ -21,9 +17,6 @@
     "url": "https://github.com/A-Sh3pherd/reactomator/issues"
   },
   "homepage": "https://github.com/A-Sh3pherd/reactomator#readme",
-  "publishConfig": {
-    "access": "public"
-  },
   "devDependencies": {
     "@types/inquirer": "^7.3.1",
     "@types/node": "^15.6.1",
@@ -33,6 +26,7 @@
   },
   "peerDependencies": {
     "inquirer": "^8.1.0",
-    "typescript": "^4.3.2"
+    "typescript": "^4.3.2",
+    "babel": "^6.23.0"
   }
 }

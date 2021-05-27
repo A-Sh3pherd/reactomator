@@ -39,7 +39,7 @@ exports.__esModule = true;
 var Fs = require("fs");
 var inquirer = require('inquirer');
 var path = require("path");
-var createJsxTemplate = require('./templates/Component.ts');
+var createJsxTemplate = require('./templates/component');
 function getAnswers() {
     return __awaiter(this, void 0, void 0, function () {
         var answers;
