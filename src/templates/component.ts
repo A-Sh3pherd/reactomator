@@ -15,4 +15,4 @@ function createJsxTemplate(compName) {
     return template;
 }
 
-module.exports = createJsxTemplate;
+module.exports = createJsxTemplate

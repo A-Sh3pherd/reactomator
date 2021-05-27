@@ -3,7 +3,7 @@ import { Inquirer } from "inquirer";
 const inquirer: Inquirer = require('inquirer');
 import * as path from 'path';
 
-const createJsxTemplate = require('./templates/Component.ts');
+const createJsxTemplate = require ('../reactomator/src/templates/component');
 
 async function getAnswers() {
     const answers: { compName: string, location: string } = await inquirer.prompt([
