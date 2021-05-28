@@ -7,7 +7,7 @@ import * as path from 'path';
 const createJsxTemplate = require('./src/templates/component')
 
 async function getAnswers() {
-    const answers: { compName: string, location: string } = await inquirer.prompt([
+    const answers: { compName: string } = await inquirer.prompt([
         {
             type: 'input',
             name: 'compName',
@@ -18,18 +18,17 @@ async function getAnswers() {
     ])
     return {
         compName: answers.compName,
-        // location: answers.location
     }
 }
 
 // Execution
 getAnswers()
-    .then(({compName}) => {
+    .then(({ compName }) => {
         // Current working directory
         const location = path.basename(process.cwd());
         console.log(`Location:  ${location}`);
         console.log(`Comp name: ${compName}`);
-        
+
         const jsxTemplate = createJsxTemplate(compName);
         // Creating empty folder
         Fs.mkdirSync(compName);

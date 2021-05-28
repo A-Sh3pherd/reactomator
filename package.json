@@ -1,6 +1,6 @@
 {
   "name": "reactomator",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "A simple Component creation React-Cli",
   "main": "index.js",
   "bin": "index.js",
