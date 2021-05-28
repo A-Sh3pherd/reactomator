@@ -2,7 +2,7 @@ function createJsxTemplate(compName) {
     const template = `import React from 'react'
     import '${compName}.css' from './${compName}';
     
-    function Banana() {
+    function `${compName}`() {
         return (
             <div>
     
