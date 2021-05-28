@@ -1,9 +1,10 @@
+#!/usr/bin/env node
 import * as Fs from "fs";
 import { Inquirer } from "inquirer";
 const inquirer: Inquirer = require('inquirer');
 import * as path from 'path';
 
-const createJsxTemplate = require('./templates/component')
+const createJsxTemplate = require('./src/templates/component')
 
 async function getAnswers() {
     const answers: { compName: string, location: string } = await inquirer.prompt([
@@ -27,7 +28,7 @@ getAnswers()
         // Current working directory
         const location = path.basename(process.cwd());
         console.log(`Location:  ${location}`);
-        console.log(`Compe name: ${compName}`);
+        console.log(`Comp name: ${compName}`);
         
         const jsxTemplate = createJsxTemplate(compName);
         // Creating empty folder

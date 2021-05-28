@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 "use strict";
 var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
     function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
@@ -39,7 +40,7 @@ exports.__esModule = true;
 var Fs = require("fs");
 var inquirer = require('inquirer');
 var path = require("path");
-var createJsxTemplate = require('./templates/component');
+var createJsxTemplate = require('./src/templates/component');
 function getAnswers() {
     return __awaiter(this, void 0, void 0, function () {
         var answers;
