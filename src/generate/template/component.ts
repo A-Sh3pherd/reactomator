@@ -1,8 +1,8 @@
-function createJsxTemplate(compName) {
+function createJsxTemplate(compName: string) {
     const template = `import React from 'react'
-    import '${compName}.css' from './${compName}';
+    import '${compName}.css';
     
-    function `${compName}`() {
+    function ${compName}() {
         return (
             <div>
     
