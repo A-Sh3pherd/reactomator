@@ -1,15 +1,16 @@
 #!/usr/bin/env node
 // import * as inquirer from 'inquirer';
-import { program } from 'commander';
+import {program} from 'commander';
 import * as fs from 'fs';
 
 // Template
 const createJsxTemplate = require('./template/component');
-// 
+
+//
 function generateComponent(compName: string) {
     const jsxTemplate = createJsxTemplate(compName);
     // Creating empty folder
-    fs.mkdirSync(compName, { recursive: true });
+    fs.mkdirSync(compName, {recursive: true});
     console.log(`${compName} Folder was successfully Created`);
     // Creating the template
     fs.writeFileSync(`${compName}/${compName}.jsx`, jsxTemplate);
@@ -26,9 +27,9 @@ program
     .command('generate <componentName>')
     .alias('g')
     .action(compName => {
-        compName.includes('/') && compName.split('/') 
+        compName.includes('/') && compName.split('/')
         generateComponent(compName)
-        console.log(compName);        
+        console.log(compName);
     })
 program.parse(process.argv)
 
