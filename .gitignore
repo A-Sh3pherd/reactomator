@@ -1,4 +1,5 @@
 # Logs
+.gitignore
 .vscode
 logs
 *.log

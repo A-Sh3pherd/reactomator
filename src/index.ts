@@ -1,11 +1,5 @@
 import * as inquirer from 'inquirer';
 
-export interface question {
-    type: '',
-    name: '',
-    message: '',
-    default: '',
-}
 
 inquirer.prompt([
     {

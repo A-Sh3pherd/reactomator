@@ -9,11 +9,11 @@
     "url": "git+https://github.com/A-Sh3pherd/reactomator.git"
   },
   "scripts": {
-    "start": "tsc -p . && node dist/index.js",
-    "dev": "tsc --watch -p ."
+    "build": "tsc -p .",
+    "dev": "node dist/index.js"
   },
   "bin": {
-    "reactomator": "dist/component/generate/component.js"
+    "reactomator": "dist/generate/component/component.js"
   },
   "files": [
     "dist"
@@ -36,10 +36,11 @@
     "react-router-dom": "^5.2.0",
     "typescript": "^4.3.2"
   },
-  "peerDependencies": {
+  "dependencies": {
     "chalk": "^4.1.1",
     "commander": "^7.2.0",
     "inquirer": "^8.1.0",
+    "react-router-dom": "^5.2.0",
     "typescript": "^4.3.2"
   }
 }

@@ -18,7 +18,7 @@ var __importStar = (this && this.__importStar) || function (mod) {
     __setModuleDefault(result, mod);
     return result;
 };
-exports.__esModule = true;
+Object.defineProperty(exports, "__esModule", { value: true });
 var inquirer = __importStar(require("inquirer"));
 inquirer.prompt([
     {
@@ -26,7 +26,7 @@ inquirer.prompt([
         name: 'name',
         message: 'What would you like to do ?',
         choices: ['Start new project', 'Generate', 'Something else that`s cool'],
-        "default": 'Not telling ya.'
+        default: 'Not telling ya.',
     }
 ]).then(function (answers) {
     console.log(answers);

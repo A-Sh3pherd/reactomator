@@ -19,7 +19,7 @@ var __importStar = (this && this.__importStar) || function (mod) {
     __setModuleDefault(result, mod);
     return result;
 };
-exports.__esModule = true;
+Object.defineProperty(exports, "__esModule", { value: true });
 // import * as inquirer from 'inquirer';
 var commander_1 = require("commander");
 var fs = __importStar(require("fs"));
