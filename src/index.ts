@@ -1,6 +1,5 @@
 import * as inquirer from 'inquirer';
 
-
 inquirer.prompt([
     {
         type: 'list',
@@ -12,5 +11,4 @@ inquirer.prompt([
 ]).then(answers => {
     console.log(answers);
     console.log(process.argv);
-
 })

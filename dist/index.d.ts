@@ -1,7 +1,2 @@
-export interface question {
-    type: '';
-    name: '';
-    message: '';
-    default: '';
-}
+export {};
 //# sourceMappingURL=index.d.ts.map

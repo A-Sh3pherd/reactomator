@@ -1,6 +1,6 @@
 {
   "name": "reactomator",
-  "version": "0.1.8",
+  "version": "0.2.0",
   "description": "Your new day-to-day Cli for React.",
   "main": "dist/index.js",
   "types": "dist",
